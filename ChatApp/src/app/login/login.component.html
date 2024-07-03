@@ -3,12 +3,12 @@
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col-12 col-md-8 col-lg-6 col-xl-5">
         <div class="card bg-dark text-white text-center" style="border-radius: 1rem;">
-          <div class="card-header">Usuários online:</div>
+          <div class="card-header">Usuários online: {{usersOn}}</div>
           <div class="card-body p-5">
               <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
               <p class="text-white-50 mb-4">Por favor escolha um nome de usuário!</p>
-              <input type="text" id="user" class="form-control form-control-lg mb-4" placeholder="Usuário" />
-              <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+              <input type="text" id="user" class="form-control form-control-lg mb-4" placeholder="Usuário" #user/>
+              <button class="btn btn-outline-light btn-lg px-5" type="submit" (click)="onLogin(user.value)">Login</button>
           </div>
         </div>
       </div>
