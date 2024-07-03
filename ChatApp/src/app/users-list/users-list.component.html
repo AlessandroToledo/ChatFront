@@ -1,1 +1,12 @@
-<p>users-list works!</p>
+<div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Bem vindo {{data}}</h5>
+      <p class="card-text">Membros no chat: {{usersOn}}</p>
+      <div *ngFor="let name of names" class="name-box">
+        <td>{{name}}</td>
+      </div>
+    </div>
+  </div>
+  
+  
+  
